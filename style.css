@@ -1,0 +1,27 @@
+:root {
+    --tlo-ciemne: #0f172a;
+    --tlo-panela: #1e293b;
+    --akcent: #38bdf8;
+    --tekst: #f1f5f9;
+}
+
+body { background: var(--tlo-ciemne); color: var(--tekst); font-family: sans-serif; margin: 0; }
+.kontener-aplikacji { display: flex; min-height: 100vh; }
+
+.panel-boczny { width: 300px; background: var(--tlo-panela); padding: 20px; border-right: 1px solid #334155; }
+.logo { font-size: 24px; font-weight: bold; margin-bottom: 30px; }
+.logo span { color: var(--akcent); }
+
+.grupa-pola { margin-bottom: 15px; }
+.grupa-pola label { display: block; margin-bottom: 5px; font-size: 14px; }
+.grupa-pola input { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #334155; background: #0f172a; color: white; }
+
+#przycisk-dodaj { width: 100%; padding: 12px; background: var(--akcent); border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+
+.grid-zgloszen { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 20px; flex-grow: 1; }
+.karta-zgloszenia { background: #1e293b; padding: 15px; border-radius: 10px; border-left: 4px solid var(--akcent); }
+.karta-zgloszenia.status-zakonczone { border-left-color: #22c55e; opacity: 0.7; }
+
+.przyciski-karty { margin-top: 15px; }
+.btn-usun { background: #ef4444; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+.btn-status { background: #22c55e; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; margin-right: 5px; }
